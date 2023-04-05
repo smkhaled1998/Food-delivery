@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery/shared/styles/app-color.dart';
-import 'package:food_delivery/shared/styles/dimension.dart';
-import 'package:food_delivery/shared/widget/big-text.dart';
+import 'package:restaurant_ui/shared/styles/app-color.dart';
+import 'package:restaurant_ui/shared/styles/dimension.dart';
+import 'package:restaurant_ui/shared/widget/big-text.dart';
 
 import 'food-page-body.dart';
 import '../shared/widget/small-text.dart';

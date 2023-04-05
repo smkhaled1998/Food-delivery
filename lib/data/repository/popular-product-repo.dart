@@ -1,4 +1,4 @@
-import 'package:food_delivery/data/api/api-client.dart';
+import 'package:restaurant_ui/data/api/api-client.dart';
 import 'package:get/get.dart';
 
 import '../../shared/app-constants.dart';

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery/pages/main-food-page.dart';
-import 'package:food_delivery/shared/styles/dimension.dart';
-import 'package:food_delivery/shared/widget/app-column.dart';
-import 'package:food_delivery/shared/widget/app-icon.dart';
-import 'package:food_delivery/shared/widget/expandable-text-widget.dart';
+import 'package:restaurant_ui/controller/cart-controller.dart';
+import 'package:restaurant_ui/pages/main-food-page.dart';
+import 'package:restaurant_ui/shared/styles/dimension.dart';
+import 'package:restaurant_ui/shared/widget/app-column.dart';
+import 'package:restaurant_ui/shared/widget/app-icon.dart';
+import 'package:restaurant_ui/shared/widget/expandable-text-widget.dart';
 
 import 'package:get/get.dart';
 import '../controller/popular-product-controller.dart';
@@ -17,7 +18,8 @@ class PopularFoodDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // var product= Get.find<PopularProductController>().popularProductList[pageId];
+    // var product= Get.find<PopularProductController>().popularProductList[0];
+    Get.find<PopularProductController>().initQuantity(Get.find<CartController>());
     return Scaffold(
       backgroundColor: Colors.white,
       body: Stack(
@@ -76,7 +78,7 @@ class PopularFoodDetails extends StatelessWidget {
                     Expanded(
                       child: SingleChildScrollView(
                         child: ExpandableTextWidget(
-                            text: "Text Text Text Text Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text"),
+                            text: "Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text Text Text TextText Text Text"),
                       ),
                     )
                   ],
@@ -138,7 +140,11 @@ class PopularFoodDetails extends StatelessWidget {
                   child: Row(
                     children: [
 
-                      BigText(text: "\$10 | Add to cart"),
+                      GestureDetector(
+                          onTap: (){
+                            // popularProduct.addItems(product);
+                          },
+                          child: BigText(text: "\$10 | Add to cart")),
 
                     ],
                   ),

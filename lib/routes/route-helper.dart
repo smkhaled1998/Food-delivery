@@ -1,6 +1,6 @@
-import 'package:food_delivery/pages/main-food-page.dart';
-import 'package:food_delivery/pages/popular-food-details.dart';
-import 'package:food_delivery/pages/recommended-food-details.dart';
+import 'package:restaurant_ui/pages/main-food-page.dart';
+import 'package:restaurant_ui/pages/popular-food-details.dart';
+import 'package:restaurant_ui/pages/recommended-food-details.dart';
 import 'package:get/get.dart';
 class RouteHelper{
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery/controller/popular-product-controller.dart';
-import 'package:food_delivery/routes/route-helper.dart';
+import 'package:restaurant_ui/controller/popular-product-controller.dart';
+import 'package:restaurant_ui/routes/route-helper.dart';
 import 'pages/main-food-page.dart';
-import 'package:food_delivery/pages/recommended-food-details.dart';
+import 'package:restaurant_ui/pages/recommended-food-details.dart';
 import 'package:get/get.dart';
 import 'helper/dependencies.dart' as dep;
 

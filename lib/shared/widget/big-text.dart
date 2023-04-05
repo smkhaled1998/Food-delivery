@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery/shared/styles/dimension.dart';
+import 'package:restaurant_ui/shared/styles/dimension.dart';
 
 class BigText extends StatelessWidget {
    Color color;

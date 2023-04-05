@@ -1,10 +1,10 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:food_delivery/routes/route-helper.dart';
-import 'package:food_delivery/shared/styles/dimension.dart';
-import 'package:food_delivery/shared/widget/big-text.dart';
-import 'package:food_delivery/shared/widget/expandable-text-widget.dart';
+import 'package:restaurant_ui/routes/route-helper.dart';
+import 'package:restaurant_ui/shared/styles/dimension.dart';
+import 'package:restaurant_ui/shared/widget/big-text.dart';
+import 'package:restaurant_ui/shared/widget/expandable-text-widget.dart';
 import '../shared/styles/app-color.dart';
 import '../shared/widget/app-icon.dart';
 import 'package:get/get.dart';

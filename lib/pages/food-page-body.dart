@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery/controller/popular-product-controller.dart';
-import 'package:food_delivery/models/products_model.dart';
+import 'package:restaurant_ui/controller/popular-product-controller.dart';
+import 'package:restaurant_ui/models/products_model.dart';
 
-import 'package:food_delivery/routes/route-helper.dart';
-import 'package:food_delivery/shared/styles/app-color.dart';
-import 'package:food_delivery/shared/styles/dimension.dart';
-import 'package:food_delivery/shared/widget/app-column.dart';
-import 'package:food_delivery/shared/widget/big-text.dart';
-import 'package:food_delivery/shared/widget/icon-and-text-widget.dart';
-import 'package:food_delivery/shared/widget/small-text.dart';
+import 'package:restaurant_ui/routes/route-helper.dart';
+import 'package:restaurant_ui/shared/styles/app-color.dart';
+import 'package:restaurant_ui/shared/styles/dimension.dart';
+import 'package:restaurant_ui/shared/widget/app-column.dart';
+import 'package:restaurant_ui/shared/widget/big-text.dart';
+import 'package:restaurant_ui/shared/widget/icon-and-text-widget.dart';
+import 'package:restaurant_ui/shared/widget/small-text.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:get/get.dart';
 

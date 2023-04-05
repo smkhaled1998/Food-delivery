@@ -1,4 +1,4 @@
-import 'package:food_delivery/shared/app-constants.dart';
+import 'package:restaurant_ui/shared/app-constants.dart';
 import 'package:get/get.dart';
 
 class ApiClient extends GetConnect implements GetxService{
